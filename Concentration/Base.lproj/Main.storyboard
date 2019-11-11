@@ -1,24 +1,881 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aSF-FP-zyi">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Concentration-->
+        <scene sceneID="IqX-cz-GFo">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="aSF-FP-zyi" customClass="ConcentrationViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9xn-vO-Pnj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="lyd-8a-l1g">
+                                <rect key="frame" x="8" y="44" width="398" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QXW-ZH-2He">
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="41"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                        <state key="normal" title="New game">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="35"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="50"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="newGame:" destination="aSF-FP-zyi" eventType="touchUpInside" id="pag-Tp-2AN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scores: 0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3EX-1w-Z61">
+                                        <rect key="frame" x="199" y="1.3333333333333357" width="199" height="34.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="30"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="55"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PkU-BM-VHd">
+                                <rect key="frame" x="10" y="267" width="394" height="595"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EH8-rz-RNH">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="92.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbq-iM-sFI">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="1GB-bf-7vs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmJ-tz-V03">
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="92.333333333333314" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="OZm-lL-jhi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81s-bM-Sl6">
+                                                <rect key="frame" x="201" y="0.0" width="92.666666666666686" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Vsp-Qo-AfS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csE-Ze-0lU">
+                                                <rect key="frame" x="301.66666666666669" y="0.0" width="92.333333333333314" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="fPm-9O-lbA"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKW-Tr-89q">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="qHM-Qc-ewa"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n30-Vn-LPG">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="39p-Z3-G1O"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="vertical"/>
+                                    </stackView>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2bV-Xy-kfw">
+                                        <rect key="frame" x="0.0" y="96.666666666666686" width="394" height="0.0"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QT4-8y-mp4">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="MJ8-yi-IrL"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd1-qq-Dxe">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="cqY-uL-xFE"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95o-Ug-DiW">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="A3m-N8-Nhh"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfg-dN-LU0">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="ESe-in-9ns"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL4-eX-XYz">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="5Vm-fo-ga9"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZZ-SS-ZBS">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Nls-cx-xtw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="vertical"/>
+                                        <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="L9d-cu-mhm">
+                                        <rect key="frame" x="0.0" y="100.66666666666669" width="394" height="92.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYd-z1-9Yh">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kYd-z1-9Yh" secondAttribute="height" multiplier="1:1" id="tK2-Fb-3aV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="4r6-2U-63q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZId-Eh-ZLh">
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="92.333333333333314" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="r1c-eN-0gM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAT-rB-aeP">
+                                                <rect key="frame" x="201" y="0.0" width="92.666666666666686" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="nBT-NC-nqo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfh-Fi-dcn">
+                                                <rect key="frame" x="301.66666666666669" y="0.0" width="92.333333333333314" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="HYz-Xf-lpc"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUi-24-ywF">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="xT0-nT-b4j"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erO-bJ-HdZ">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="p2k-oL-Zie"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="vertical"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fnb-dv-CGF">
+                                        <rect key="frame" x="0.0" y="201" width="394" height="92.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-es-iAJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="mdB-Ct-lBR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4Q-Q1-zX6">
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="92.333333333333314" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Mck-Us-IvY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hER-ZT-mO6">
+                                                <rect key="frame" x="201" y="0.0" width="92.666666666666686" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hER-ZT-mO6" secondAttribute="height" multiplier="1:1" id="Bb2-OR-rjr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="sLv-gd-Oup"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyu-4g-Ymm">
+                                                <rect key="frame" x="301.66666666666669" y="0.0" width="92.333333333333314" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="xvL-jW-waL"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RV1-f8-kPy">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="AjO-33-tTE"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awr-oV-vdg">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Pas-Ih-7gu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="vertical"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2q7-FO-Zw8">
+                                        <rect key="frame" x="0.0" y="301.66666666666663" width="394" height="92.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7y-hd-9T1">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="lPi-ia-0ao"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6L-Xu-nwY">
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="92.333333333333314" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="IKp-9X-JVu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-7y-0N9">
+                                                <rect key="frame" x="201" y="0.0" width="92.666666666666686" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Nm9-ff-Q9k"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34u-Hs-mCF">
+                                                <rect key="frame" x="301.66666666666669" y="0.0" width="92.333333333333314" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="s5S-N4-Iae"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEk-v4-qBi">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="eC1-IS-rM6"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlA-Bc-acY">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="bwd-21-ZDT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="vertical"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ScZ-z6-WQ5">
+                                        <rect key="frame" x="0.0" y="402" width="394" height="92.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="no5-wu-bdz">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="IhH-sC-jmY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfb-xi-DiK">
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="92.333333333333314" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="McN-1s-Tyi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAm-n5-c7n">
+                                                <rect key="frame" x="201" y="0.0" width="92.666666666666686" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="mxn-S1-PoB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1z-11-aHm">
+                                                <rect key="frame" x="301.66666666666669" y="0.0" width="92.333333333333314" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="3iT-mM-sMQ"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJk-I0-NvA">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="yvW-kz-oiA"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-hq-p0I">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.666666666666671"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="heT-sI-LJJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="vertical"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Mn3-n1-XJC">
+                                        <rect key="frame" x="0.0" y="502.66666666666657" width="394" height="92.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6C-bn-3So">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="rM7-Ua-FEB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMU-x7-o5x">
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="92.333333333333314" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="VbV-Lw-BK5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iye-Z2-Fj1">
+                                                <rect key="frame" x="201" y="0.0" width="92.666666666666686" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="zmJ-IW-obR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wE-w1-I87">
+                                                <rect key="frame" x="301.66666666666669" y="0.0" width="92.333333333333314" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="vet-3P-fBz"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noq-By-F83">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="4DM-aC-xvK"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBp-mz-kML">
+                                                <rect key="frame" x="398" y="0.0" width="0.0" height="92.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="4Bo-5k-IhL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="vertical"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lyd-8a-l1g" firstAttribute="top" secondItem="Ad5-uv-RZg" secondAttribute="top" id="0Vk-gE-kcw"/>
+                            <constraint firstItem="Ad5-uv-RZg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PkU-BM-VHd" secondAttribute="trailing" constant="10" id="2d6-DJ-oQb"/>
+                            <constraint firstItem="lyd-8a-l1g" firstAttribute="leading" secondItem="Ad5-uv-RZg" secondAttribute="leading" constant="8" id="643-K6-PyM"/>
+                            <constraint firstItem="PkU-BM-VHd" firstAttribute="centerX" secondItem="9xn-vO-Pnj" secondAttribute="centerX" id="9kz-RU-ywQ"/>
+                            <constraint firstItem="Ad5-uv-RZg" firstAttribute="trailing" secondItem="PkU-BM-VHd" secondAttribute="trailing" constant="10" id="Ck1-rz-9ve"/>
+                            <constraint firstItem="PkU-BM-VHd" firstAttribute="top" secondItem="lyd-8a-l1g" secondAttribute="bottom" id="DR8-pF-6ss"/>
+                            <constraint firstItem="lyd-8a-l1g" firstAttribute="top" relation="lessThanOrEqual" secondItem="Ad5-uv-RZg" secondAttribute="top" id="FHg-av-dka"/>
+                            <constraint firstItem="PkU-BM-VHd" firstAttribute="leading" secondItem="Ad5-uv-RZg" secondAttribute="leading" constant="10" id="J60-98-03d"/>
+                            <constraint firstItem="PkU-BM-VHd" firstAttribute="centerX" secondItem="9xn-vO-Pnj" secondAttribute="centerX" id="cRh-GQ-wi5"/>
+                            <constraint firstItem="PkU-BM-VHd" firstAttribute="bottom" secondItem="Ad5-uv-RZg" secondAttribute="bottom" id="jjD-Lh-PMU"/>
+                            <constraint firstItem="PkU-BM-VHd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ad5-uv-RZg" secondAttribute="leading" constant="10" id="p3h-55-1JP"/>
+                            <constraint firstItem="Ad5-uv-RZg" firstAttribute="trailing" secondItem="lyd-8a-l1g" secondAttribute="trailing" constant="8" id="vyI-gv-tnI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ad5-uv-RZg"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2d6-DJ-oQb"/>
+                                <exclude reference="9kz-RU-ywQ"/>
+                                <exclude reference="DR8-pF-6ss"/>
+                                <exclude reference="cRh-GQ-wi5"/>
+                                <exclude reference="p3h-55-1JP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Ck1-rz-9ve"/>
+                                <include reference="9kz-RU-ywQ"/>
+                                <include reference="DR8-pF-6ss"/>
+                                <exclude reference="J60-98-03d"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="2d6-DJ-oQb"/>
+                                <exclude reference="Ck1-rz-9ve"/>
+                                <exclude reference="J60-98-03d"/>
+                                <include reference="cRh-GQ-wi5"/>
+                                <include reference="p3h-55-1JP"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Concentration" image="concentration" id="bvA-fz-Du1"/>
+                    <navigationItem key="navigationItem" title="Concentration" id="lt4-db-lz5"/>
+                    <connections>
+                        <outlet property="newGameButton" destination="QXW-ZH-2He" id="sBs-Xa-GAv"/>
+                        <outlet property="scoreLabel" destination="3EX-1w-Z61" id="R66-Cs-azu"/>
+                        <outlet property="stackView" destination="PkU-BM-VHd" id="gPM-tM-HxG"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4g-WA-3Nd" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="43.478260869565219" y="-127.90178571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="concentration" width="16" height="16"/>
+    </resources>
 </document>

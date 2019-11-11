@@ -8,22 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		780E73BD2376ABE100E91CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E73BC2376ABE100E91CBA /* AppDelegate.swift */; };
-		780E73BF2376ABE100E91CBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E73BE2376ABE100E91CBA /* SceneDelegate.swift */; };
-		780E73C12376ABE100E91CBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E73C02376ABE100E91CBA /* ViewController.swift */; };
 		780E73C42376ABE100E91CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780E73C22376ABE100E91CBA /* Main.storyboard */; };
 		780E73C62376ABE600E91CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780E73C52376ABE600E91CBA /* Assets.xcassets */; };
 		780E73C92376ABE600E91CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780E73C72376ABE600E91CBA /* LaunchScreen.storyboard */; };
+		780E73D42376AC2E00E91CBA /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E73D02376AC2E00E91CBA /* ConcentrationViewController.swift */; };
+		780E73D52376AC2E00E91CBA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E73D12376AC2E00E91CBA /* Extensions.swift */; };
+		780E73D62376AC2E00E91CBA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E73D22376AC2E00E91CBA /* Card.swift */; };
+		780E73D72376AC2E00E91CBA /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E73D32376AC2E00E91CBA /* Concentration.swift */; };
+		78CE74C52379CF51005FE425 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78CE74C72379CF51005FE425 /* Localizable.strings */; };
+		78CE74CC2379D300005FE425 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78CE74CE2379D300005FE425 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		780E73B92376ABE100E91CBA /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		780E73BC2376ABE100E91CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		780E73BE2376ABE100E91CBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		780E73C02376ABE100E91CBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		780E73C32376ABE100E91CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		780E73C52376ABE600E91CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		780E73C82376ABE600E91CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		780E73CA2376ABE600E91CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780E73D02376AC2E00E91CBA /* ConcentrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
+		780E73D12376AC2E00E91CBA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		780E73D22376AC2E00E91CBA /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		780E73D32376AC2E00E91CBA /* Concentration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		78CE74B92379CE16005FE425 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CE74BE2379CF2A005FE425 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		78CE74C02379CF2C005FE425 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		78CE74C22379CF2E005FE425 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		78CE74C62379CF51005FE425 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		78CE74C82379CF53005FE425 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		78CE74C92379CF53005FE425 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		78CE74CD2379D300005FE425 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78CE74CF2379D305005FE425 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78CE74D02379D309005FE425 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +71,27 @@
 		780E73BB2376ABE100E91CBA /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				780E73BC2376ABE100E91CBA /* AppDelegate.swift */,
-				780E73BE2376ABE100E91CBA /* SceneDelegate.swift */,
-				780E73C02376ABE100E91CBA /* ViewController.swift */,
 				780E73C22376ABE100E91CBA /* Main.storyboard */,
-				780E73C52376ABE600E91CBA /* Assets.xcassets */,
-				780E73C72376ABE600E91CBA /* LaunchScreen.storyboard */,
-				780E73CA2376ABE600E91CBA /* Info.plist */,
+				780E73D32376AC2E00E91CBA /* Concentration.swift */,
+				780E73D22376AC2E00E91CBA /* Card.swift */,
+				780E73D02376AC2E00E91CBA /* ConcentrationViewController.swift */,
+				780E73D82376AC3E00E91CBA /* Misc files */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		780E73D82376AC3E00E91CBA /* Misc files */ = {
+			isa = PBXGroup;
+			children = (
+				780E73BC2376ABE100E91CBA /* AppDelegate.swift */,
+				780E73D12376AC2E00E91CBA /* Extensions.swift */,
+				780E73C52376ABE600E91CBA /* Assets.xcassets */,
+				780E73C72376ABE600E91CBA /* LaunchScreen.storyboard */,
+				78CE74B92379CE16005FE425 /* Info.plist */,
+				78CE74C72379CF51005FE425 /* Localizable.strings */,
+				78CE74CE2379D300005FE425 /* InfoPlist.strings */,
+			);
+			path = "Misc files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +136,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				es,
 			);
 			mainGroup = 780E73B02376ABE100E91CBA;
 			productRefGroup = 780E73BA2376ABE100E91CBA /* Products */;
@@ -126,8 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				780E73C92376ABE600E91CBA /* LaunchScreen.storyboard in Resources */,
+				78CE74C52379CF51005FE425 /* Localizable.strings in Resources */,
 				780E73C62376ABE600E91CBA /* Assets.xcassets in Resources */,
 				780E73C42376ABE100E91CBA /* Main.storyboard in Resources */,
+				78CE74CC2379D300005FE425 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				780E73C12376ABE100E91CBA /* ViewController.swift in Sources */,
+				780E73D42376AC2E00E91CBA /* ConcentrationViewController.swift in Sources */,
+				780E73D72376AC2E00E91CBA /* Concentration.swift in Sources */,
+				780E73D52376AC2E00E91CBA /* Extensions.swift in Sources */,
 				780E73BD2376ABE100E91CBA /* AppDelegate.swift in Sources */,
-				780E73BF2376ABE100E91CBA /* SceneDelegate.swift in Sources */,
+				780E73D62376AC2E00E91CBA /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +184,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				780E73C32376ABE100E91CBA /* Base */,
+				78CE74BE2379CF2A005FE425 /* en */,
+				78CE74C02379CF2C005FE425 /* ru */,
+				78CE74C22379CF2E005FE425 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,6 +199,26 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		78CE74C72379CF51005FE425 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78CE74C62379CF51005FE425 /* en */,
+				78CE74C82379CF53005FE425 /* ru */,
+				78CE74C92379CF53005FE425 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		78CE74CE2379D300005FE425 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78CE74CD2379D300005FE425 /* en */,
+				78CE74CF2379D305005FE425 /* ru */,
+				78CE74D02379D309005FE425 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -170,6 +226,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -216,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -230,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -270,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,12 +343,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 36UX7SKY3J;
-				INFOPLIST_FILE = Concentration/Info.plist;
+				INFOPLIST_FILE = "Concentration/Misc files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs193p.ass1.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -303,12 +364,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 36UX7SKY3J;
-				INFOPLIST_FILE = Concentration/Info.plist;
+				INFOPLIST_FILE = "Concentration/Misc files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs193p.ass1.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
