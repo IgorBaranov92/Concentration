@@ -1,24 +1,19 @@
 import Foundation
 
 struct Card {
+    
     var isFaceUp = false
     var isMatched = false
-    var numberOfMismatchedInvolded = -1
+    var alreadySeen = false
     private(set) var identifier: Int
-    static private var id = 1
     
-    init() {
-        identifier = Card.id
-        Card.id += 1
+    init(id:Int) {
+        self.identifier = id
     }
 }
 
 extension Card: Hashable {
     static func ==(lhs:Card,rhs:Card) -> Bool {
         return lhs.identifier == rhs.identifier
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        
     }
 }

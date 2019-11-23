@@ -7,27 +7,24 @@ class Concentration {
     private(set) var cards = [Card]()
     
     var gameCompleted: Bool { cards.filter { $0.isMatched }.count == cards.count }
-    
     var selectedCards: [Card] { cards.filter { $0.isFaceUp } }
     
     private var cardsAreMatched: Bool {
         Set(selectedCards.map {Int($0.identifier)}).count == 1
     }
     
-    private var penalty: Int {
-        selectedCards.map{$0.numberOfMismatchedInvolded}.reduce(0,{$0+$1})
-    }
+    private var penalty: Int { selectedCards.filter { $0.alreadySeen == true }.count }
     
     func chooseCard(at index: Int) {
+        print(index)
         if !cards[index].isMatched {
             cards[index].isFaceUp = true
             if selectedCards.count == 3 {
                 if cardsAreMatched {
-                    Concentration.scores += 2
+                    Concentration.scores += 3
                     setCardsMatched()
                     delegate?.matchWasFound()
                 } else {
-                    setPenaltyForSelectedCards()
                     Concentration.scores -= penalty
                     delegate?.matchWasNotFound()
                 }
@@ -39,7 +36,10 @@ class Concentration {
 
     private func flipBackCards() {
         for index in cards.indices {
-            cards[index].isFaceUp = false
+            if cards[index].isFaceUp {
+                cards[index].isFaceUp = false
+                cards[index].alreadySeen = true
+            }
         }
     }
     
@@ -51,19 +51,9 @@ class Concentration {
         }
     }
     
-    
-    private func setPenaltyForSelectedCards() {
-        for index in cards.indices {
-            if cards[index].isFaceUp {
-                cards[index].numberOfMismatchedInvolded += 1
-            }
-        }
-    }
-    
-    
     init(numberOfPairsOfCards: Int) {
-        for _ in 1...numberOfPairsOfCards {
-            let card = Card()
+        for id in 1...numberOfPairsOfCards {
+            let card = Card(id: id)
             cards += [card,card,card]
         }
         cards = cards.shuffled()

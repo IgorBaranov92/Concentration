@@ -5,7 +5,6 @@ class ConcentrationViewController: UIViewController, ConcentrationGameDelegate {
     private var theme: (emoji:String,backgroundColor:UIColor,cardColor:UIColor)!
     private lazy var game = Concentration(numberOfPairsOfCards: cardButtons.count/3)
     private var currentEmoji = String()
-    private var emoji = [Card:Character]()
     private var selectedCards: [UIButton] {
         cardButtons.filter { $0.currentTitle != "" && !$0.isHidden }
     }
@@ -29,7 +28,8 @@ class ConcentrationViewController: UIViewController, ConcentrationGameDelegate {
             if !game.cards[cardIndex].isMatched && cardButtons[cardIndex].currentTitle == "" {
                 cardButtons[cardIndex].isUserInteractionEnabled = false
                 game.chooseCard(at: cardIndex)
-                cardButtons[cardIndex].setTitle(String(emoji(for: game.cards[cardIndex])),                                  for: .normal)
+                cardButtons[cardIndex].setTitle(buttonTitle(game.cards[cardIndex].identifier),
+                                                for: .normal)
                 UIView.transition(with: cardButtons[cardIndex],
                                   duration: Constants.durationForFlippingCard,
                                   options: .transitionFlipFromLeft,
@@ -44,6 +44,9 @@ class ConcentrationViewController: UIViewController, ConcentrationGameDelegate {
         }
     }
 
+    private func buttonTitle(_ id:Int) -> String {
+        return String(currentEmoji[currentEmoji.index(currentEmoji.startIndex, offsetBy: id)])
+    }
 
     @IBAction func newGame(_ sender: UIButton) {
         createNewGame()
@@ -52,12 +55,12 @@ class ConcentrationViewController: UIViewController, ConcentrationGameDelegate {
     @objc private func createNewGame() {
         game = Concentration(numberOfPairsOfCards: cardButtons.count/3)
         game.delegate = self
-        let randomIndex = Int.random(in: 0..<themes.count)
-        theme = Array(themes.values)[randomIndex]
+        theme = Array(themes.values)[Int.random(in: 0..<themes.count)]
         currentEmoji = theme.emoji
         cardButtons.forEach { $0.backgroundColor = theme.cardColor
                               $0.setTitle("", for: .normal)
                               $0.isUserInteractionEnabled = true
+                              $0.titleLabel?.adjustsFontSizeToFitWidth = true
         }
         view.backgroundColor = theme.backgroundColor
         scoreLabel.text = NSLocalizedString("Scores", comment: "") + "\(Concentration.scores)"
@@ -65,19 +68,10 @@ class ConcentrationViewController: UIViewController, ConcentrationGameDelegate {
         newGameButton.setTitleColor(theme.cardColor, for: .normal)
     }
 
-    private func emoji(for card:Card) -> Character {
-        if emoji[card] == nil {
-            let randomIndex = currentEmoji.index(currentEmoji.startIndex,
-                                                 offsetBy: Int.random(in: 0..<currentEmoji.count))
-            emoji[card] = currentEmoji.remove(at: randomIndex)
-        }
-        return emoji[card] ?? "?"
-    }
 
     private func updateLabels() {
         scoreLabel.text = NSLocalizedString("Scores", comment: "") + "\(Concentration.scores)"
     }
-    
     
 
     private func enableUI(_ isUserInteractionEnabled:Bool) {
