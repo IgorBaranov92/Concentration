@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aSF-FP-zyi">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -61,13 +62,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="1GB-bf-7vs"/>
                                                 </connections>
@@ -78,13 +73,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="OZm-lL-jhi"/>
                                                 </connections>
@@ -95,13 +84,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Vsp-Qo-AfS"/>
                                                 </connections>
@@ -112,13 +95,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="fPm-9O-lbA"/>
                                                 </connections>
@@ -129,13 +106,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="qHM-Qc-ewa"/>
                                                 </connections>
@@ -146,13 +118,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="39p-Z3-G1O"/>
                                                 </connections>
@@ -164,103 +131,73 @@
                                         <rect key="frame" x="0.0" y="96.666666666666686" width="394" height="0.0"/>
                                         <subviews>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QT4-8y-mp4">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="132"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="MJ8-yi-IrL"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd1-qq-Dxe">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="132"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="cqY-uL-xFE"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95o-Ug-DiW">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="132"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="A3m-N8-Nhh"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfg-dN-LU0">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="132"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="ESe-in-9ns"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL4-eX-XYz">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="132"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="5Vm-fo-ga9"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZZ-SS-ZBS">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="132"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Nls-cx-xtw"/>
                                                 </connections>
@@ -281,13 +218,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kYd-z1-9Yh" secondAttribute="height" multiplier="1:1" id="tK2-Fb-3aV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="4r6-2U-63q"/>
                                                 </connections>
@@ -298,13 +229,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="r1c-eN-0gM"/>
                                                 </connections>
@@ -315,13 +240,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="nBT-NC-nqo"/>
                                                 </connections>
@@ -332,13 +251,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="HYz-Xf-lpc"/>
                                                 </connections>
@@ -349,13 +262,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="xT0-nT-b4j"/>
                                                 </connections>
@@ -366,13 +274,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="p2k-oL-Zie"/>
                                                 </connections>
@@ -389,13 +292,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="mdB-Ct-lBR"/>
                                                 </connections>
@@ -406,13 +303,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Mck-Us-IvY"/>
                                                 </connections>
@@ -426,13 +317,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hER-ZT-mO6" secondAttribute="height" multiplier="1:1" id="Bb2-OR-rjr"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="sLv-gd-Oup"/>
                                                 </connections>
@@ -443,13 +328,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="xvL-jW-waL"/>
                                                 </connections>
@@ -460,13 +339,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="AjO-33-tTE"/>
                                                 </connections>
@@ -477,13 +351,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Pas-Ih-7gu"/>
                                                 </connections>
@@ -500,13 +369,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="lPi-ia-0ao"/>
                                                 </connections>
@@ -517,13 +380,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="IKp-9X-JVu"/>
                                                 </connections>
@@ -534,13 +391,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="Nm9-ff-Q9k"/>
                                                 </connections>
@@ -551,13 +402,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="s5S-N4-Iae"/>
                                                 </connections>
@@ -568,13 +413,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="eC1-IS-rM6"/>
                                                 </connections>
@@ -585,13 +425,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="bwd-21-ZDT"/>
                                                 </connections>
@@ -608,13 +443,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="IhH-sC-jmY"/>
                                                 </connections>
@@ -625,13 +454,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="McN-1s-Tyi"/>
                                                 </connections>
@@ -642,13 +465,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="mxn-S1-PoB"/>
                                                 </connections>
@@ -659,13 +476,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="3iT-mM-sMQ"/>
                                                 </connections>
@@ -676,13 +487,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="yvW-kz-oiA"/>
                                                 </connections>
@@ -693,13 +499,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="heT-sI-LJJ"/>
                                                 </connections>
@@ -716,13 +517,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="rM7-Ua-FEB"/>
                                                 </connections>
@@ -733,13 +528,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="VbV-Lw-BK5"/>
                                                 </connections>
@@ -750,13 +539,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="zmJ-IW-obR"/>
                                                 </connections>
@@ -767,13 +550,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="vet-3P-fBz"/>
                                                 </connections>
@@ -784,13 +561,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="4DM-aC-xvK"/>
                                                 </connections>
@@ -801,13 +573,8 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                </variation>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                                 <connections>
                                                     <action selector="touchCard:" destination="aSF-FP-zyi" eventType="touchUpInside" id="4Bo-5k-IhL"/>
                                                 </connections>

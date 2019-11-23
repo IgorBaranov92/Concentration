@@ -56,12 +56,8 @@ class ConcentrationViewController: UIViewController, ConcentrationGameDelegate {
         game = Concentration(numberOfPairsOfCards: cardButtons.count/3)
         game.delegate = self
         theme = Array(themes.values)[Int.random(in: 0..<themes.count)]
-        currentEmoji = theme.emoji
-        cardButtons.forEach { $0.backgroundColor = theme.cardColor
-                              $0.setTitle("", for: .normal)
-                              $0.isUserInteractionEnabled = true
-                              $0.titleLabel?.adjustsFontSizeToFitWidth = true
-        }
+        currentEmoji = String(theme.emoji.shuffled())
+        customizeButtons()
         view.backgroundColor = theme.backgroundColor
         scoreLabel.text = NSLocalizedString("Scores", comment: "") + "\(Concentration.scores)"
         scoreLabel.textColor = theme.cardColor
@@ -78,6 +74,16 @@ class ConcentrationViewController: UIViewController, ConcentrationGameDelegate {
         cardButtons.forEach { $0.isUserInteractionEnabled = isUserInteractionEnabled }
     }
 
+    private func customizeButtons() {
+          cardButtons.forEach { $0.backgroundColor = theme.cardColor
+                                $0.setTitle("", for: .normal)
+                                $0.isUserInteractionEnabled = true
+                                $0.titleLabel!.adjustsFontSizeToFitWidth = true
+                                $0.titleLabel!.numberOfLines = 1
+                                $0.titleLabel!.minimumScaleFactor = 0.1
+                                $0.titleLabel!.baselineAdjustment = .alignCenters
+                }
+    }
     
     private let themes : [String:(emoji:String,cardColor:UIColor,backgroundColor:UIColor)] = [
         "Halloween":
