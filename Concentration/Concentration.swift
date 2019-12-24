@@ -16,7 +16,6 @@ class Concentration {
     private var penalty: Int { selectedCards.filter { $0.alreadySeen == true }.count }
     
     func chooseCard(at index: Int) {
-        print(index)
         if !cards[index].isMatched {
             cards[index].isFaceUp = true
             if selectedCards.count == 3 {
